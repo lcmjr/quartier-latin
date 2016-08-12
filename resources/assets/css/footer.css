@@ -1,0 +1,29 @@
+#rodape{
+    padding: 40px 0 20px;
+    font-size: 17px;
+}
+#informacoes-rodape {
+    padding: 0 0 20px 25px;
+    margin-left: 20px;
+    border-left: 1px solid;
+}
+#informacoes-rodape,#onde-estamos-rodape {
+    float: left;
+}
+#newletter-rodape {
+    float: right;
+    width: 200px;
+}
+.titulo-rodape{
+    margin: 5px 0 10px;
+}
+#copyright{
+    font-size: 13px;
+}
+#logo-youp{
+    background: url(/imagens/logo-youp.png);
+    height: 12px;
+    width: 30px;
+    display: inline-block;
+    margin: 0 0 -3px 10px;
+}

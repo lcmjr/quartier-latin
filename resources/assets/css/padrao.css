@@ -1,0 +1,50 @@
+.central {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.bg-black{
+    background: #0A0B0C;
+}
+.bg-orange{
+    background: #E15616;
+}
+.bg-gray{
+    background: #E5E5E5;
+}
+.bg-black, .bg-black .ctd-text a,.bg-orange, .bg-black .ctd-text a{
+    color: white;
+}
+.ctd-text a{
+    color: black;
+}
+.icon-social{
+    background: url(/imagens/redes-sociais.png);
+    width: 29px;
+    height: 29px;
+    display: inline-block;
+}
+.icon-instagram{
+    background-position: -34px 0;
+}
+.icon-youtube{
+    background-position: -69px 0;
+}
+.reset-radius{
+    border-radius: 0;
+}
+.btn-standard{
+    color: white;
+    font:400 14px/1.2 'Roboto', sans-serif;
+    padding: 9px 13px 10px;
+    transition: 0.15s;
+}
+.btn-gold,.btn-gray:hover{
+    background: #C9AD69;
+}
+.btn-gray, .btn-gold:hover{
+    background: #6F6F6F;
+}
+.btn-send {
+    float: right;
+    margin-right: 15px;
+}

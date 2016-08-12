@@ -1,0 +1,29 @@
+body{
+    font:300 15px/1.2 'Roboto', sans-serif;
+}
+b,h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+h1{
+    font-size: 28px;
+}
+h2{
+    font-size: 18px;
+}
+label {
+    font-weight: normal;
+}
+button{
+    border: none;
+}
+.form-control {
+    height: 28px;
+    border: none;
+    border-radius: 0;
+}
+.control-label, .form-control{
+    font: 400 16px/1.2 'Roboto', sans-serif;
+}
+.form-group {
+    margin-bottom: 5px;
+}

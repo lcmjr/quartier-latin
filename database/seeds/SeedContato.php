@@ -5,10 +5,10 @@ use Illuminate\Database\Seeder;
 class SeedContato extends Seeder{
     public function run(){
         DB::table('contato')->insert(array(
-            ['telefone_1' => "(11) 4994 0713",
+            ['telefone' => "(11) 4994 0713",
                 'email' => "escola@quartierlatin.com.br",
                 'facebook' => "http://facebook.com/quartierlatin",
-                'twitter' => "http://twitter.com/quartierlatin",
+                'instagram' => "http://instagram.com/quartierlatin",
                 'youtube' => "http://youtube.com/quartierlatin",
                 'endereco_1' => "Rua Silva Dutra, 60",
                 'endereco_2' => "Jardim Bela Vista",

@@ -12,7 +12,7 @@ class Contato extends Migration{
             $table->string('telefone', 15);
             $table->string('email', 100);
             $table->string('facebook', 200);
-            $table->string('twitter', 200);
+            $table->string('instagram', 200);
             $table->string('youtube', 200);
             $table->string('endereco_1', 100);
             $table->string('endereco_2', 100);

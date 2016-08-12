@@ -1,4 +1,5 @@
-var elixir = require('laravel-elixir');
+var elixir = require('laravel-elixir'),
+    gulp = require('gulp');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,5 +13,11 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.styles([
+        'menu.css',
+        'topo.css',
+        'bootstrap_resets.css',
+        'footer.css'
+    ]);
+    mix.styles(['padrao.css'], 'public/css/small.css');
 });
