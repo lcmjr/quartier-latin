@@ -19,7 +19,8 @@ elixir(function(mix) {
         'banner.css',
         'bootstrap_resets.css',
         'footer.css',
-        'content.css'
+        'content.css',
+        'events.css'
     ]);
     mix.styles(['padrao.css'], 'public/css/small.css');
 });

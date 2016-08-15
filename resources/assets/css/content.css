@@ -23,6 +23,15 @@
 .bg-rotate .title-border {
     margin: 10px 0 30px;
 }
+.bg-rotate-fitup{
+    margin-top: -41px;
+}
+.bg-rotate-after-none::after {
+    display: none;
+}
+.bg-rotate-after-none .content-rotate {
+    padding-bottom: 50px;
+}
 .title-border{
     text-align: center;
 }
@@ -66,21 +75,11 @@
 .margin-bottom {
     margin-bottom: 30px;
 }
-.day-event {
-    font-size: 24px;
-}
-.month-event {
-    font-size: 16px;
-}
-.content-day-event {
-    font-weight: 400;
-    background: #C9AD69;
-    width: 97px;
-    height: 97px;
-    border-radius: 60px;
-    padding-top: 23px;
-    display: inline-block;
-}
-.content-day-event span {
+.img-post img {
     display: block;
+    width: 100%;
+}
+.post .img-post{
+    max-width: 230px;
+    margin: 0 auto;
 }

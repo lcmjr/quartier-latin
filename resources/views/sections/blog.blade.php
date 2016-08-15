@@ -1,10 +1,11 @@
-@extends('sections.bg-rotate',["classes_rotate" => "bg-rotate-orange bg-rotate-toleft text-center"])
+<?php $class = (isset($class_container))?$class_container:"bg-rotate-toleft";?>
+@extends('sections.bg-rotate',["classes_rotate" => "bg-rotate-orange text-center ".$class])
 @section('content-rotate')
     <h1 class="title-border">AS ÚLTIMAS DO BACKSTAGE</h1>
     <h2 class="subtitle-border">Dicas, novidades e blá blá blá.</h2>
     <div class="row">
         @foreach($posts as $post)
-            <div class="post col-md-3 margin-bottom">
+            <div class="post col-sm-6 col-md-3 margin-bottom">
                 <div class="img-post">
                     <a href="{{$post['link']}}"><img alt="{{$post['title']}}" src="uploads/post/{{$post['image']}}"/></a>
                 </div>

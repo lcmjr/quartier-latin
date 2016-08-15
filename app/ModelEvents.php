@@ -23,12 +23,12 @@ class ModelEvents extends Model{
     private static function handling_date($event,$date){
         $date = new Date($date);
         $event['day'] = $date->day;
-        $event['month'] = $date->format('M');
+        $event['month'] = $date->format('F');
         return $event;
     }
 
     public static function page_data(){
-        $events = self::whereDate('date','>=',date('Y-m-d'))->orderBy('date')->all(['date','title','text','when','schedule','where','address','link','ticket-link']);
+        $events = self::whereDate('date','>=',date('Y-m-d'))->orderBy('date')->get(['date','title','text','when','schedule','where','address','link','ticket-link']);
         $events = self::handling_event($events);
         return $events;
     }

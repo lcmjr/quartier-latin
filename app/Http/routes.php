@@ -13,3 +13,4 @@
 
 Route::get('/', 'ControllerHome@page');
 Route::get('/home', 'ControllerHome@page');
+Route::get('/calendario', 'ControllerEvents@page');
