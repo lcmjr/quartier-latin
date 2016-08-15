@@ -1,0 +1,56 @@
+.container-banner {
+    overflow: hidden;
+    position: relative;
+    max-width: 1024px;
+}
+.banner{
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    opacity: 0;
+}
+#container-controle-banner{
+    text-align: center;
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin: -10px 0 -50px;
+}
+.controle-banner{
+    display: inline-block;
+    margin: 0 5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.bg-banner, .controle-banner{
+    background: #000;
+}
+.controle-banner:hover, .controle-banner-ativo{
+    background-color:#E05616;
+}
+.banner-arrow{
+    background: url(../imagens/seta-banner.png);
+    width: 21px;
+    height: 52px;
+    position: absolute;
+    top: 50%;
+    transition: 0.15s;
+    margin-top: -26px;
+    cursor: pointer;
+}
+.banner-arrow-left{
+    left: 5%;
+}
+.banner-arrow-right{
+    right: 5%;
+    background-position: -23px 0;
+}
+.banner-arrow-left:hover{
+    left: 4%;
+}
+.banner-arrow-right:hover{
+    right: 4%;
+}

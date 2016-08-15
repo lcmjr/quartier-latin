@@ -16,8 +16,10 @@ elixir(function(mix) {
     mix.styles([
         'menu.css',
         'topo.css',
+        'banner.css',
         'bootstrap_resets.css',
-        'footer.css'
+        'footer.css',
+        'content.css'
     ]);
     mix.styles(['padrao.css'], 'public/css/small.css');
 });

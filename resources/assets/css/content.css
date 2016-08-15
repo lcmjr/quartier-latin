@@ -1,0 +1,55 @@
+.bg-rotate{
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+.bg-rotate::before, .bg-rotate::after {
+    content: '';
+    display: block;
+    height: 70px;
+    width: 100%;
+}
+.bg-rotate-toleft::before, .bg-rotate-toright::after {
+    transform: rotate(-1deg);
+}
+.bg-rotate-toleft::after, .bg-rotate-toright::before{
+    transform: rotate(1deg);
+}
+.bg-rotate .content-rotate{
+    margin: -35px 0 -20px;
+    position: relative;
+    z-index: 2;
+}
+.bg-rotate .title-border {
+    margin: 10px 0 30px;
+}
+.title-border{
+    text-align: center;
+}
+.title-border::after{
+    height: 2px;
+    background: black;
+    content: "";
+    display: block;
+    width: 120px;
+    margin:13px auto 30px;
+}
+.img-content{
+    width: 37%;
+}
+.ctd-text{
+    width: 62%;
+}
+.content-photo-left .img-content, .content-photo-right .ctd-text{
+    float: left;
+}
+.content-photo-left .ctd-text, .content-photo-right .img-content{
+    float: right;
+}
+.course {
+     margin-bottom: 20px;
+}
+.course h2 {
+    padding: 0 20px;
+    margin: 15px 0 10px;
+}
