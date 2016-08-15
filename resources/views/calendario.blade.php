@@ -19,10 +19,10 @@
             <p><b>Onde?</b><br/>{{$event->where}}</p>
             <p><b>Endereço:</b>{{$event->address}}</p>
             @if($event->link != '')
-            <a href="{{$event->link}}" class="btn-standard btn-gray">SITE OFICIAL</a>
+            <a href="{{$event->link}}" target="_blank" class="btn-standard btn-gray">SITE OFICIAL</a>
             @endif
             @if($event['ticket-link'] != '')
-            <a href="{{$event['ticket-link']}}" class="btn-standard btn-gold">COMPRE SEU INGRESSO</a>
+            <a href="{{$event['ticket-link']}}" target="_blank" class="btn-standard btn-gold">COMPRE SEU INGRESSO</a>
             @endif
         </div>
     @endforeach
