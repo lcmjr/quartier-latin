@@ -4,7 +4,7 @@
     <h2 class="subtitle-border">Dicas, novidades e blá blá blá.</h2>
     <div class="row">
         @foreach($posts as $post)
-            <div class="post col-md-3">
+            <div class="post col-md-3 margin-bottom">
                 <div class="img-post">
                     <a href="{{$post['link']}}"><img alt="{{$post['title']}}" src="uploads/post/{{$post['image']}}"/></a>
                 </div>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\ModelBanner;
 use App\ModelContato;
 use App\ModelCourses;
+use App\ModelEvents;
 use App\ModelTextPhoto;
 use Illuminate\Http\Request;
 
@@ -28,6 +29,7 @@ class ControllerHome extends Controller{
         $posts[3]['title'] = "Morre em Paris o último deus da dança";
         $posts[3]['image'] = "4.jpg";
         $posts[3]['link'] = "#";
-        return view('home')->with('dados_contato',$dados_contato)->with("banners",$banner)->with("text_photo",$text_photo)->with("courses",$courses)->with("posts",$posts);
+        $events = ModelEvents::section_events();
+        return view('home')->with('dados_contato',$dados_contato)->with("banners",$banner)->with("text_photo",$text_photo)->with("courses",$courses)->with("posts",$posts)->with("events",$events);
     }
 }

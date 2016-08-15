@@ -63,6 +63,24 @@
 .bg-rotate-orange .title-border::after {
     background: white;
 }
-.post {
+.margin-bottom {
     margin-bottom: 30px;
+}
+.day-event {
+    font-size: 24px;
+}
+.month-event {
+    font-size: 16px;
+}
+.content-day-event {
+    font-weight: 400;
+    background: #C9AD69;
+    width: 97px;
+    height: 97px;
+    border-radius: 60px;
+    padding-top: 23px;
+    display: inline-block;
+}
+.content-day-event span {
+    display: block;
 }

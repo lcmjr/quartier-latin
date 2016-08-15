@@ -1,0 +1,60 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class SeedEvents extends Seeder{
+    public function run(){
+        DB::table('model_events')->insert(array(
+            ['title' => "APRESENTAÇÃO \"BEATLES LADO D\"",
+                'date'=> '2016-08-30',
+                'text' => "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p>",
+                'when' => "25, 26 e 27 de Outubro de 2016",
+                'schedule' => "20h",
+                'where' => "Teatro Municipal de Santo André",
+                'address' => "Rua Nome da rua, 123, Santo André",
+                'link' => "#",
+                'ticket-link' => "#",
+            ],
+            ['title' => "33º FESTIVAL DE DANÇA DE JOINVILLE",
+                'date'=> '2016-09-01',
+                'text' => "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p>",
+                'when' => "25, 26 e 27 de Outubro de 2016",
+                'schedule' => "20h",
+                'where' => "Teatro Municipal de Santo André",
+                'address' => "Rua Nome da rua, 123, Santo André",
+                'link' => "#",
+                'ticket-link' => "#",
+            ],
+            ['title' => "APRESENTAÇÃO \"BEATLES LADO D\"",
+                'date'=> '2016-12-30',
+                'text' => "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p>",
+                'when' => "25, 26 e 27 de Outubro de 2016",
+                'schedule' => "20h",
+                'where' => "Teatro Municipal de Santo André",
+                'address' => "Rua Nome da rua, 123, Santo André",
+                'link' => "#",
+                'ticket-link' => "#",
+            ],
+            ['title' => "33º FESTIVAL DE DANÇA DE JOINVILLE",
+                'date'=> '2016-11-01',
+                'text' => "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p>",
+                'when' => "25, 26 e 27 de Outubro de 2016",
+                'schedule' => "20h",
+                'where' => "Teatro Municipal de Santo André",
+                'address' => "Rua Nome da rua, 123, Santo André",
+                'link' => "",
+                'ticket-link' => "",
+            ],
+            ['title' => "APRESENTAÇÃO \"BEATLES LADO D\"",
+                'date'=> '2016-10-30',
+                'text' => "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum massa nec mauris varius elementum.</p>",
+                'when' => "25, 26 e 27 de Outubro de 2016",
+                'schedule' => "20h",
+                'where' => "Teatro Municipal de Santo André",
+                'address' => "Rua Nome da rua, 123, Santo André",
+                'link' => "#",
+                'ticket-link' => "#",
+            ]
+            ));
+    }
+}

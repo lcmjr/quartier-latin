@@ -8,5 +8,6 @@ class DatabaseSeeder extends Seeder{
         $this->call(SeedBanner::class);
         $this->call(SeedCourses::class);
         $this->call(SeedTextPhotos::class);
+        $this->call(SeedEvents::class);
     }
 }
