@@ -5,14 +5,6 @@
     <script type="text/javascript" src="js/banner.js"></script>
 @stop
 
-@section('content-rotate')
-    <h1 class="title-border">{{$text_photo->title}}</h1>
-    <div class="img-content">
-        <img alt="{{$text_photo->title}}" src="uploads/text_photos/{{$text_photo->photo}}"/>
-    </div>
-    <div class="ctd-text">{!!$text_photo->text!!}</div>
-    <div class="clearfix"></div>
-@stop
 
 @section('conteudo')
 <div class="bg-banner">
@@ -29,7 +21,7 @@
     </div>
 </div>
 <div id="container-controle-banner"></div>
-@include('sections.bg-rotate',["classes_rotate" => "bg-rotate-gray bg-rotate-toleft content-photo-left"])
+@include('sections.section-home')
 <section class="text-center">
     <div class="central">
         <h1 class="title-border color-orange">ENCONTRE O SEU LUGAR</h1>
@@ -46,4 +38,5 @@
     </div>
     <a class="btn-standard btn-gold" href="formacao">SAIBA MAIS SOBRE A FORMAÇÃO DANÇA CLÁSSICA</a>
 </section>
+@include('sections.blog')
 @stop

@@ -5,13 +5,13 @@
 .bg-black{
     background: #0A0B0C;
 }
-.bg-orange,.bg-rotate-orange::before, .bg-rotate-orange::after,.bg-rotate-orange .content-rotate{
+.bg-rotate-orange::before, .bg-rotate-orange::after,.bg-rotate-orange .content-rotate{
     background: #E15616;
 }
 .bg-gray,.bg-rotate-gray::before, .bg-rotate-gray::after,.bg-rotate-gray .content-rotate{
     background: #E5E5E5;
 }
-.bg-black, .bg-black .ctd-text a,.bg-orange, .bg-black .ctd-text a{
+.bg-black, .bg-black .ctd-text a,.bg-rotate-orange,.bg-rotate-orange a, .bg-black .ctd-text a{
     color: white;
 }
 .ctd-text a{

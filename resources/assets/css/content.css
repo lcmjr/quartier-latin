@@ -27,7 +27,7 @@
     text-align: center;
 }
 .title-border::after{
-    height: 2px;
+    height: 1px;
     background: black;
     content: "";
     display: block;
@@ -39,6 +39,10 @@
 }
 .ctd-text{
     width: 62%;
+}
+.ctd-text .btn-standard {
+    color: white;
+    margin-right: 10px;
 }
 .content-photo-left .img-content, .content-photo-right .ctd-text{
     float: left;
@@ -52,4 +56,13 @@
 .course h2 {
     padding: 0 20px;
     margin: 15px 0 10px;
+}
+.subtitle-border {
+    margin: -20px 0 30px;
+}
+.bg-rotate-orange .title-border::after {
+    background: white;
+}
+.post {
+    margin-bottom: 30px;
 }
