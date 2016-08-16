@@ -25,8 +25,27 @@ button{
     border-radius: 0;
 }
 .control-label, .form-control{
-    font: 400 16px/1.2 'Roboto', sans-serif;
+    font: 300 14px/1.2 'Roboto', sans-serif;
 }
 .form-group {
     margin-bottom: 5px;
+}
+.control-label {
+    padding: 0;
+}
+.form-group-twolines {
+    margin-top: 12px;
+}
+.form-group-twolines .control-label {
+    margin-top: -12px;
+}
+#newletter-rodape .control-label, #newletter-rodape .form-control {
+    font-size: 16px;
+    font-weight: 400;
+}
+#informacoes-courses .form-control {
+    background: #E5E5E5;
+}
+#msg-courses {
+    height: 90px;
 }

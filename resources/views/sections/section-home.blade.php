@@ -1,4 +1,4 @@
-@extends('sections.bg-rotate',["classes_rotate" => "bg-rotate-gray bg-rotate-toleft content-photo-left"])
+@extends('sections.bg-rotate',["classes_rotate" => "bg-rotate-gray bg-rotate-toleft content-photo content-photo-left"])
 @section('content-rotate')
     <h1 class="title-border">{{$text_photo->title}}</h1>
     <div class="img-content">

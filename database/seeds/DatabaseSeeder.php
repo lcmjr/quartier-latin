@@ -9,5 +9,7 @@ class DatabaseSeeder extends Seeder{
         $this->call(SeedCourses::class);
         $this->call(SeedTextPhotos::class);
         $this->call(SeedEvents::class);
+        $this->call(SeedTextWithGallery::class);
+        $this->call(SeedGalleryFromTexts::class);
     }
 }

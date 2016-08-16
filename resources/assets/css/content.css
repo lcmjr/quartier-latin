@@ -43,10 +43,10 @@
     width: 120px;
     margin:13px auto 30px;
 }
-.img-content{
+.content-photo .img-content{
     width: 37%;
 }
-.ctd-text{
+.content-photo .ctd-text{
     width: 62%;
 }
 .ctd-text .btn-standard {
@@ -68,6 +68,7 @@
 }
 .subtitle-border {
     margin: -20px 0 30px;
+    text-align: center;
 }
 .bg-rotate-orange .title-border::after {
     background: white;
@@ -82,4 +83,25 @@
 .post .img-post{
     max-width: 230px;
     margin: 0 auto;
+}
+.gallery-text-photos img {
+    margin-bottom: 20px;
+}
+.img-course img,.gallery-text-photos img {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+}
+@media all and (max-width: 990px) {
+    .text-center-sm {
+        text-align: center;
+    }
+}
+@media all and (max-width: 767px) {
+    .course-pg {
+        text-align: center;
+    }
+    .control-label {
+        padding: 20px 15px 0px;
+    }
 }
