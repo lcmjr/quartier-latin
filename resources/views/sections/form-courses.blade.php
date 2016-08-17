@@ -1,3 +1,6 @@
+@if($central)
+    <div class="central margin-bottom">
+@endif
 <h1 class="title-border {{$classe_title or ""}}">CHEGOU A SUA VEZ DE SUBIR AO PALCO</h1>
 <h2 class="subtitle-border {{$classe_title or ""}}">Para mais informações sobre os cursos, e grade de horários utilize o formulário abaixo</h2>
 <div class="form-horizontal">
@@ -57,3 +60,6 @@
         </div>
     </form>
 </div>
+@if($central)
+    </div>
+@endif
