@@ -27,3 +27,26 @@
     display: inline-block;
     margin: 0 0 -3px 10px;
 }
+@media all and (max-width: 700px) {
+    #informacoes-rodape, #onde-estamos-rodape {
+        float: none;
+        text-align: center;
+    }
+    #informacoes-rodape {
+        margin: 20px 0;
+        padding: 20px;
+        border-left: 0;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+    }
+    #newletter-rodape {
+        float: none;
+        margin: 0 auto;
+    }
+    #copyright {
+        text-align: center;
+        margin-top: 15px;
+        border-top: 1px solid;
+        padding-top: 20px;
+    }
+}

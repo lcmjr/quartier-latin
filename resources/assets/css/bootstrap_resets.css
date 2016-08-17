@@ -49,3 +49,8 @@ button{
 #msg-courses {
     height: 90px;
 }
+@media all and (max-width: 991px) {
+    #newletter-rodape .control-label, #newletter-rodape .form-control {
+        padding: 0 15px;
+    }
+}
