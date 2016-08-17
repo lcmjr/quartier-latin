@@ -18,7 +18,7 @@
 @stop
 @section('conteudo')
     @include('sections.bg-rotate',["classes_rotate" => "bg-rotate-gray bg-rotate-toleft"])
-    @include('sections.gallery-text',["class_gallery" => "gallery-left gallery-small", "class_text"=> "gallery-text-right","classe_title"=>"color-orange"])
+    @include('sections.gallery-text',["class_gallery" => "col-md-4 gallery-txt-left gallery-txt-container-small", "class_text"=> "col-md-8 gallery-txt-right","classe_title"=>"color-orange"])
     @section('content-rotate')
         @include('sections.form-courses',["central"=>false])
     @overwrite

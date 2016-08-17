@@ -92,9 +92,22 @@
     width: 100%;
     max-width: 300px;
 }
-@media all and (max-width: 990px) {
+.gallery-text-photos-big img {
+    max-width: 480px;
+}
+.gallery-txt-left{
+    float: left;
+}
+.gallery-txt-right{
+    float: right;
+}
+@media all and (max-width: 991px) {
     .text-center-sm {
         text-align: center;
+    }
+    .gallery-text-photos{
+        margin-top:40px;
+        width: 100%;
     }
 }
 @media all and (max-width: 767px) {

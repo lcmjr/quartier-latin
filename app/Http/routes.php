@@ -15,3 +15,4 @@ Route::get('/', 'ControllerHome@page');
 Route::get('/home', 'ControllerHome@page');
 Route::get('/calendario', 'ControllerEvents@page');
 Route::get('/formacao', 'ControllerFormation@page');
+Route::get('/trajetoria', 'ControllerTrajectory@page');
