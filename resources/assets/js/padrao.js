@@ -15,5 +15,3 @@ $(window).ready(function(){
 function remove_class(classe) {
     $("." + classe).removeClass(classe);
 }
-
-//# sourceMappingURL=padrao.js.map

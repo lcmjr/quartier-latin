@@ -53,4 +53,3 @@ function click_banner(banner_number) {
         anima_banner(banner_number);
     }
 }
-//# sourceMappingURL=banner.js.map
