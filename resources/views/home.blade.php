@@ -5,6 +5,9 @@
     <script type="text/javascript" src="js/banner.js"></script>
 @stop
 
+@section('content-rotate')
+    @include('sections.text-photo',["buttons"=> "<a href=\"quartier-latin\" class=\"btn-standard btn-gray\">LEIA MAIS</a><a href=\"contato\" class=\"btn-standard btn-gold\">ENTRE EM CONTATO</a>","central"=>false])
+@stop
 
 @section('conteudo')
 <div class="bg-banner">
@@ -21,7 +24,7 @@
     </div>
 </div>
 <div id="container-controle-banner"></div>
-@include('sections.section-home')
+@include('sections.bg-rotate',["classes_rotate" => "bg-rotate-gray bg-rotate-toleft content-photo content-photo-left"])
 <section class="text-center">
     <div class="central">
         <h1 class="title-border color-orange">ENCONTRE O SEU LUGAR</h1>

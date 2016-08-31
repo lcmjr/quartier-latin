@@ -11,5 +11,9 @@ class DatabaseSeeder extends Seeder{
         $this->call(SeedEvents::class);
         $this->call(SeedTextWithGallery::class);
         $this->call(SeedGalleryFromTexts::class);
+        $this->call(SeedDepartment::class);
+        $this->call(SeedTeam::class);
+        $this->call(SeedQuartierLatin::class);
+        $this->call(SeedQuartierLatinGallery::class);
     }
 }

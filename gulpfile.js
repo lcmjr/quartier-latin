@@ -20,7 +20,10 @@ elixir(function(mix) {
         'bootstrap_resets.css',
         'footer.css',
         'content.css',
-        'events.css'
+        'events.css',
+        'gallery.css'
     ]);
-    mix.styles(['padrao.css'], 'public/css/small.css');
+    mix.styles(['padrao.css','topo.css'], 'public/css/small.css');
+    mix.scripts(['gallery.js'],'public/js/gallery.js');
+    mix.scripts(['quartier-latin.js'],'public/js/quartier-latin.js');
 });
