@@ -112,6 +112,10 @@
 .team-text h2 {
     margin-top: 0;
 }
+.team-image img {
+    width: 100%;
+    margin-bottom: 20px;
+}
 @media all and (max-width: 1100px) {
     .content-photo-left .ctd-text {
         width: 58%;
@@ -124,6 +128,14 @@
     .gallery-text-photos{
         margin-top:40px;
         width: 100%;
+    }
+    .team-image {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .team-text {
+        text-align: center;
+        margin-bottom: 30px;
     }
 }
 @media all and (max-width: 767px) {
