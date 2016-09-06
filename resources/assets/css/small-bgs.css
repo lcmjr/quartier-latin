@@ -1,0 +1,7 @@
+/* this is for the background-links from small.css */
+.icon-social, .icon-social-link::before{
+    background: url(/imagens/redes-sociais.png) no-repeat;
+}
+#logo {
+    background: url(/imagens/logo.png);
+}

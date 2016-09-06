@@ -21,16 +21,26 @@
 .color-orange{
     color: #E15616;
 }
-.icon-social{
-    background: url(/imagens/redes-sociais.png);
+.icon-social, .icon-social-link::before{
     width: 29px;
     height: 29px;
     display: inline-block;
 }
-.icon-instagram{
+.icon-social-link::before{
+    content: '';
+    margin: 0 10px -9px -34px;
+}
+.icon-social-link {
+    display: block;
+    padding-left: 34px;
+    padding-top: 5px;
+    margin: 10px 0;
+    color: black;
+}
+.icon-instagram.icon-social, .icon-instagram.icon-social-link::before{
     background-position: -34px 0;
 }
-.icon-youtube{
+.icon-youtube.icon-social, .icon-instagram.icon-social-link::before{
     background-position: -69px 0;
 }
 .reset-radius{

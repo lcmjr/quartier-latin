@@ -17,3 +17,4 @@ Route::get('/calendario', 'ControllerEvents@page');
 Route::get('/formacao', 'ControllerFormation@page');
 Route::get('/trajetoria', 'ControllerTrajectory@page');
 Route::get('/quartier-latin', 'ControllerQuartier@page');
+Route::get('/contato', 'ControllerContact@page');

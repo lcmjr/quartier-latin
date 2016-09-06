@@ -14,6 +14,7 @@ var elixir = require('laravel-elixir'),
 
 elixir(function(mix) {
     mix.styles([
+        'small-bgs.css',
         'menu.css',
         'topo.css',
         'banner.css',
@@ -21,7 +22,8 @@ elixir(function(mix) {
         'footer.css',
         'content.css',
         'events.css',
-        'gallery.css'
+        'gallery.css',
+        'contact.css'
     ]);
     mix.styles(['padrao.css','topo.css'], 'public/css/small.css');
     mix.scripts(['gallery.js'],'public/js/gallery.js');
