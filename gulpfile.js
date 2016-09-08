@@ -23,7 +23,8 @@ elixir(function(mix) {
         'content.css',
         'events.css',
         'gallery.css',
-        'contact.css'
+        'contact.css',
+        'plie.css'
     ]);
     mix.styles(['padrao.css','topo.css'], 'public/css/small.css');
     mix.scripts(['gallery.js'],'public/js/gallery.js');
