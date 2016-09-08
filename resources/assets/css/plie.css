@@ -27,7 +27,7 @@
     height: auto;
 }
 .icon-love-ballet {
-    background: url(../imagens/i-love-ballet.png);
+    background: url(../imagens/i-love-ballet.png) no-repeat;
     width: 153px;
     height: 77px;
     float: right;
@@ -58,7 +58,8 @@
         background-repeat: no-repeat;
     }
     .icon-love-ballet {
-        margin-left: -50px;
+        background-size: contain;
+        width: 90px;
     }
 }
 @media all and (max-width: 767px) {
