@@ -9,6 +9,7 @@
                 folder_gallery: "uploads/carousel/",
                 id_main_photo: "#main-photo",
                 id_title: "#gallery-title",
+                has_title:false,
                 container_img_gallery: ".container-imgs-controle"
             }, options);
 

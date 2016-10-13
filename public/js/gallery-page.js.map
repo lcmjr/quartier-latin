@@ -1,0 +1,1 @@
+{"version":3,"sources":["gallery-page.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA","file":"gallery-page.js","sourcesContent":["/**\r\n * Created by luizm on 13/09/2016.\r\n */\r\n$(window).ready(function(){\r\n    $(\".galeria\").gallery({has_title:true});\r\n});\r\n"],"sourceRoot":"/source/"}
