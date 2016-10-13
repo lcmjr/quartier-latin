@@ -16,7 +16,7 @@
         <div class="container-videos">
             @foreach($videos as $video)
             <div class="video">
-                <a href="{{$video->video}}" target="_blank"><img src="videos/{{$video->thumb}}" alt="{{$video->title}}"/></a>
+                <a href="{{$video->video}}" target="_blank"><img src="uploads/videos/{{$video->thumbnail}}" alt="{{$video->title}}"/></a>
                 <h2 class="color-orange">{{$video->title}}</h2>
                 <p>{!! $video->desc !!}</p>
             </div>
