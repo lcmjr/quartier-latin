@@ -20,7 +20,7 @@
             <div class="banner-arrow banner-arrow-left"></div>
             <div class="banner-arrow banner-arrow-right"></div>
         </div>
-        <div class="clear"></div>
+        <div class="clearfix"></div>
     </div>
 </div>
 <div id="container-controle-banner"></div>

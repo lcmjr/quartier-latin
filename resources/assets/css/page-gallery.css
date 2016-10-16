@@ -1,0 +1,38 @@
+.video {
+    margin-bottom: 20px;
+    float: left;
+}
+.video img, .video iframe{
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+#btn-more-videos {
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+@media all and (min-width: 600px){
+    .page-video .video:nth-child(4) {
+        clear: both;
+    }
+    .page-video .video:nth-child(3n+2){
+        margin: 0 3% 20px;
+    }
+    .video {
+        width: 31%;
+    }
+}
+@media all and (max-width: 599px) and (min-width:380px){
+    .video {
+        width: 45%;
+    }
+    .page-video .video:nth-child(2n+1){
+        margin: 0 5% 20px;
+    }
+}
+@media all and (max-width: 380px){
+    .video {
+        width: 100%;
+        margin:0;
+    }
+}

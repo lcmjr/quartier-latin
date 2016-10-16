@@ -11,16 +11,13 @@
 @stop
 @section('conteudo')
     @include('sections.bg-rotate',["classes_rotate" => "bg-rotate-gray bg-rotate-toleft"])
-    <!--<div class="central">
+    <div class="central text-center">
         <h1 class="title-border color-orange">VÍDEOS</h1>
         <div class="container-videos">
-            @foreach($videos as $video)
-            <div class="video">
-                <a href="{{$video->video}}" target="_blank"><img src="uploads/videos/{{$video->thumbnail}}" alt="{{$video->title}}"/></a>
-                <h2 class="color-orange">{{$video->title}}</h2>
-                <p>{!! $video->desc !!}</p>
-            </div>
-            @endforeach
+            @include('gallery.gallery-videos')
+            @if($videos->lastpage() >1)
+                <a class="btn-gold btn-standard" id="btn-more-videos" data-page-max="{{$videos->lastpage()}}">MAIS VÍDEOS</a>
+            @endif
         </div>
-    </div>-->
+    </div>
 @stop

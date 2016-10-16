@@ -25,12 +25,13 @@ elixir(function(mix) {
         'gallery.css',
         'contact.css',
         'plie.css',
-        'page-gallery.css'
+        'page-gallery.css',
+        'animate.css'
     ]);
     mix.styles(['padrao.css','topo.css'], 'public/css/small.css');
     mix.scripts(['gallery.js'],'public/js/gallery.js');
     mix.scripts(['quartier-latin.js'],'public/js/quartier-latin.js');
-    mix.scripts(['padrao.js'],'public/js/padrao.js');
+    mix.scripts(['visible.js','padrao.js'],'public/js/padrao.js');
     mix.scripts(['banner.js'],'public/js/banner.js');
     mix.scripts(['gallery-page.js'],'public/js/gallery-page.js');
 });

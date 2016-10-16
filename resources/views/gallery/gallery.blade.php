@@ -11,7 +11,7 @@ if($class == "gallery-fullwidth"){
     <div class="central">
     @endif
         <div id="img-main-gallery">
-            <img id="main-photo" src="" alt="" {!!$size_fullimage!!}/>
+            <img id="main-photo" class="animate-in animate-height" src="imagens/pixel-transparente.png" alt="" {!!$size_fullimage!!}/>
             @if($title)
             <h1 id="gallery-title"></h1>
             @endif

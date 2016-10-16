@@ -18,5 +18,6 @@ Route::get('/formacao', 'ControllerFormation@page');
 Route::get('/calendario', 'ControllerEvents@page');
 Route::get('/trajetoria', 'ControllerTrajectory@page');
 Route::get('/galeria', 'ControllerGallery@page');
+Route::get('/galeria-ajax', 'ControllerGallery@ajax_video');
 Route::get('/plie', 'ControllerPlie@page');
 Route::get('/contato', 'ControllerContact@page');
