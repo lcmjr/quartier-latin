@@ -4,7 +4,7 @@
         <div class="ctd-text {{$class_text}}">{!!$text->text!!}</div>
         <div class="gallery-text-photos {{$class_gallery}}">
             @foreach($gallery_text as $photos_text)
-                <img alt="{{$text->title}}" src="uploads/gallery-text/{{$photos_text->photo}}"/>
+                <img class="animate-in animate-y-pos" alt="{{$text->title}}" src="uploads/gallery-text/{{$photos_text->photo}}"/>
             @endforeach
         </div>
     </div>
