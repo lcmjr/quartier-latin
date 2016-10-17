@@ -2,16 +2,16 @@
     opacity: 0;
 }
 .animate-y-pos {
-    transform: translateY(150px);
+    transform: translateY(100px);
 }
 .animate-y-pos-2 {
-    transform: translateY(200px);
+    transform: translateY(150px);
 }
 .animate-y-pos-3 {
-    transform: translateY(250px);
+    transform: translateY(200px);
 }
 .animate-y-pos-4 {
-    transform: translateY(300px);
+    transform: translateY(250px);
 }
 .animate-y-neg {
     transform: translateY(-150px);

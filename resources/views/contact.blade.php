@@ -4,12 +4,12 @@
 @section('content-rotate')
     <h1 class="title-border">ENTRE EM CONTATO</h1>
     <div class="row">
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-6 animate-in animate-x-neg">
             <span class="color-orange">{{$dados_contato[0]->email}}<br/>
             telefone: {{$dados_contato[0]->telefone}}</span>
             @include('includes.redes-sociais', [ "dados_contato"=>$dados_contato[0],"show_link"=>true,"show_youtube"=>true])
         </div>
-        <div class="col-md-6 col-sm-6"><p>Envie uma mensagem através do formulário abaixo:</p>
+        <div class="col-md-6 col-sm-6 animate-in animate-y-pos"><p>Envie uma mensagem através do formulário abaixo:</p>
             <div id="msg-result-contato"></div>
             <form method="post" onsubmit="return ajax_contact()" id="form-contact" action="contato">
                 {{ csrf_field()}}
