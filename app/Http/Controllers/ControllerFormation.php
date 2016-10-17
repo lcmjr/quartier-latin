@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\class_animate;
 use App\ModelContato;
 use App\ModelCourses;
 use App\TextWithGallery;
@@ -15,6 +16,7 @@ class ControllerFormation extends Controller{
         $courses = ModelCourses::all();
         $text = TextWithGallery::find(1);
         $gallery_text = TextWithGallery::find(1)->gallery;
-        return view('formacao')->with('dados_contato',$dados_contato)->with("courses",$courses)->with("text",$text)->with("gallery_text",$gallery_text);
+        $class_animate_y = class_animate::get_animate();
+        return view('formacao')->with('class_animate_y',$class_animate_y)->with('dados_contato',$dados_contato)->with("courses",$courses)->with("text",$text)->with("gallery_text",$gallery_text);
     }
 }

@@ -6,7 +6,7 @@
 <div class="form-horizontal">
     <form action="informacoes" id="informacoes-courses" method="post">
         <div class="row">
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-6 animate-in animate-x-neg">
                 <div class="form-group">
                     <label for="nome-courses" class="col-md-4 col-sm-4 control-label">Nome:</label>
                     <div class="col-md-8 col-sm-8">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-6 animate-in animate-y-pos">
                 <div class="form-group">
                     <label for="period-courses" class="col-md-4 col-sm-4 control-label">Qual período?</label>
                     <div class="col-md-8 col-sm-8">
