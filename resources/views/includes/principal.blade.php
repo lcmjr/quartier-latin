@@ -42,18 +42,18 @@
 @yield('conteudo')
 <footer id="rodape" class="bg-black">
     <div class="central">
-        <div id="onde-estamos-rodape">
+        <div id="onde-estamos-rodape" class="animate-in animate-x-neg">
             <h2 class="titulo-rodape">ONDE ESTAMOS?</h2>
             @include('includes.endereco', ["dados_contato"=>$dados_contato[0]])
         </div>
-        <div id="informacoes-rodape">
+        <div id="informacoes-rodape" class="animate-in animate-x-pos">
             <h2 class="titulo-rodape">INFORMAÇÕES</h2>
             {{$dados_contato[0]->telefone}}<br/>
             {{$dados_contato[0]->email}}
             <br/><br/>
             @include('includes.redes-sociais', [ "dados_contato"=>$dados_contato[0],"show_link"=>false,"show_youtube"=>true])
         </div>
-        <div id="newletter-rodape" class="form-horizontal">
+        <div id="newletter-rodape" class="form-horizontal animate-in animate-x-neg">
             <h2 class="titulo-rodape">INSCREVA-SE E RECEBA TODAS AS NOVIDADES!</h2>
             <form action="newsletter" method="post">
                 <div class="form-group">
@@ -74,7 +74,7 @@
             </form>
         </div>
         <div class="clearfix"></div>
-        <div id="copyright">
+        <div id="copyright" class="animate-in animate-x-neg">
             <span>Quartier Latin Ballet - Copyright 2016. Todos os direitos reservados.</span>
             <a id="logo-youp" target="_blank" href="http://youp.com.br/"></a>
             <div class="clear"></div>
