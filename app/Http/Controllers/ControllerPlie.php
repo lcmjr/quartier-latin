@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\class_animate;
 use App\drawings;
 use App\ModelContato;
 use App\plie;
@@ -16,6 +17,7 @@ class ControllerPlie extends Controller {
         $drawings = drawings::all();
         $poetry = poetrys::inRandomOrder()->take(1)->get();;
         $plie = plie::find(1);
-        return view('plie')->with('dados_contato', $dados_contato)->with("drawings",$drawings)->with("poetry",$poetry)->with("plie",$plie);
+        $class_animate_y = class_animate::get_animate();
+        return view('plie')->with('class_animate_y',$class_animate_y)->with('dados_contato', $dados_contato)->with("drawings",$drawings)->with("poetry",$poetry)->with("plie",$plie);
     }
 }
