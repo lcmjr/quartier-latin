@@ -8,8 +8,8 @@
 @section('content-rotate')
     <h1 class="title-border">{{$quartier_latin->title}}</h1>
     <div class="row">
-        <div class="gallery-text ctd-text">{!!$quartier_latin->text!!}<a href="contato" class="btn-standard btn-gold">ENTRE EM CONTATO</a></div>
-        @include('gallery.gallery',["class" => "gallery-medium","central"=>false,"photos" => $gallery_quartier,"title"=>false])
+        <div class="gallery-text ctd-text animate-in animate-x-neg">{!!$quartier_latin->text!!}<a href="contato" class="btn-standard btn-gold">ENTRE EM CONTATO</a></div>
+        @include('gallery.gallery',["class" => "gallery-medium animate-in animate-x-neg","central"=>false,"photos" => $gallery_quartier,"title"=>false])
     </div>
 @stop
 @section('conteudo')
@@ -20,8 +20,8 @@
             <h1 class="title-border">{{$department->name}}</h1>
             @foreach($department->team as $team)
                 <div class="team">
-                    <div class="team-image col-md-4"><img src="uploads/team/{{$team->photo}}" alt="{{$team->name}}"/></div>
-                    <div class="team-text col-md-8 ctd-text">
+                    <div class="team-image col-md-4 animate-in animate-x-neg"><img src="uploads/team/{{$team->photo}}" alt="{{$team->name}}"/></div>
+                    <div class="team-text col-md-8 ctd-text animate-in animate-y-pos">
                         <h2>{{$team->name}}</h2>
                         <h2>{{$team->job}}</h2>
                         {!!$team->text!!}
