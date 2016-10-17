@@ -1,4 +1,3 @@
-<?php $class_animate_y = ['','animate-y-pos-2','animate-y-pos-3'];?>
 <div class="page-video">
     <?php $animate_count = 0;?>
     @foreach($videos as $video)

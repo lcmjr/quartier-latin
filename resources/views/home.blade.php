@@ -29,13 +29,15 @@
     <div class="central">
         <h1 class="title-border color-orange">ENCONTRE O SEU LUGAR</h1>
         <div class="row">
+            <?php $animate_count = 0;?>
             @foreach($courses as $course)
-                <div class="course col-md-4">
+                <div class="course col-md-4 animate-in animate-y-pos {{$class_animate_y[$animate_count]}}">
                     <div class="img-course">
                         <img alt="{{$course->title}}" src="uploads/courses/{{$course->photo}}"/>
                     </div>
                     <h2>{{$course->title}}</h2>
                 </div>
+                <?php $animate_count++;?>
             @endforeach
         </div>
     </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\class_animate;
 use App\ModelBanner;
 use App\ModelContato;
 use App\ModelCourses;
@@ -17,6 +18,7 @@ class ControllerHome extends Controller{
         $banner = ModelBanner::all();
         $text_photo = ModelTextPhoto::find(1);
         $courses = ModelCourses::take(3)->get();
+        $class_animate_y = class_animate::get_animate();
         $posts[0]['title'] = "Como cuidar de sua sapatilha";
         $posts[0]['image'] = "1.jpg";
         $posts[0]['link'] = "#";
@@ -30,6 +32,6 @@ class ControllerHome extends Controller{
         $posts[3]['image'] = "4.jpg";
         $posts[3]['link'] = "#";
         $events = ModelEvents::section_events();
-        return view('home')->with('dados_contato',$dados_contato)->with("banners",$banner)->with("text_photo",$text_photo)->with("courses",$courses)->with("posts",$posts)->with("events",$events);
+        return view('home')->with('class_animate_y',$class_animate_y)->with('dados_contato',$dados_contato)->with("banners",$banner)->with("text_photo",$text_photo)->with("courses",$courses)->with("posts",$posts)->with("events",$events);
     }
 }

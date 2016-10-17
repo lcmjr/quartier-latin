@@ -89,6 +89,12 @@
 .gallery-fullwidth .container-imgs-controle {
     margin-left: 13px;
 }
+.gallery-medium #img-main-gallery {
+    max-height: 330px;
+}
+.gallery-fullwidth #img-main-gallery {
+    max-height: 600px;
+}
 @keyframes photo-out-in{
     0%{
         margin-left:0;
