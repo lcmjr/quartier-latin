@@ -1,5 +1,5 @@
 AddHandler php7-script .php
-suPHP_ConfigPath /home/clinicapersonnalite/
+suPHP_ConfigPath /home/quartierlatin5/
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews

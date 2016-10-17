@@ -21,7 +21,7 @@
     font-size: 13px;
 }
 #logo-youp{
-    background: url(/imagens/logo-youp.png);
+    background: url(../imagens/logo-youp.png);
     height: 12px;
     width: 30px;
     display: inline-block;
