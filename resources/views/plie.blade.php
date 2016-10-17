@@ -1,5 +1,5 @@
 @extends('includes.principal')
-@section('classe-pg', 'page-quartier')
+@section('classe-pg', 'page-plie')
 @section('javascript')
     <script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
     <script type="text/javascript" src="js/gallery.js"></script>
