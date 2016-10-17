@@ -5,7 +5,7 @@
 <h1 class="title-border">PRÓXIMOS EVENTOS</h1>
 <div class="events-content">
     @foreach($events as $key=>$event)
-        <div class="event event-pg @if(count($events) == ($key+1))last-event @endif @if($event->link == '' && $event['ticket-link'] == '')event-nobutton @endif">
+        <div class="event event-pg animate-in animate-y-pos @if(count($events) == ($key+1))last-event @endif @if($event->link == '' && $event['ticket-link'] == '')event-nobutton @endif">
             <div class="content-day-event text-center">
                 <span class="day-event">{{$event['day']}}</span>
                 <span class="month-event">{{$event['month']}}</span>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\class_animate;
 use App\ModelContato;
 use App\ModelEvents;
 use Illuminate\Http\Request;
@@ -23,7 +24,8 @@ class ControllerEvents extends Controller{
         $posts[3]['title'] = "Morre em Paris o último deus da dança";
         $posts[3]['image'] = "4.jpg";
         $posts[3]['link'] = "#";
+        $class_animate_y = class_animate::get_animate();
         $events = ModelEvents::page_data();
-        return view('calendario')->with('dados_contato',$dados_contato)->with("posts",$posts)->with("events",$events);
+        return view('calendario')->with('class_animate_y',$class_animate_y)->with('dados_contato',$dados_contato)->with("posts",$posts)->with("events",$events);
     }
 }
