@@ -7,14 +7,8 @@
     <title>Quartier Latin @yield('title')</title>
     <base href="{{ asset('/') }}"/>
     <link rel="icon" href="imagens/favicon.ico" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- inline public/css/small.css -->
     <link href='css/small.css' rel='stylesheet' inline type='text/css'>
-    <link href='css/all.css' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/padrao.js"></script>
-    @yield('javascript')
 </head>
 <body class="@yield('classe-pg')">
 <header id="topo-principal" class="bg-black">
@@ -55,17 +49,18 @@
         </div>
         <div id="newletter-rodape" class="form-horizontal animate-in animate-x-neg">
             <h2 class="titulo-rodape">INSCREVA-SE E RECEBA TODAS AS NOVIDADES!</h2>
-            <form action="newsletter" method="post">
+            <div id="msg-result-news"></div>
+            <form action="newsletter" onsubmit="return enviar_news()" id="form-newsletter" method="post">
                 <div class="form-group">
                     <label for="nome-news" class="col-md-3 control-label">Nome:</label>
                     <div class="col-md-9">
-                        <input id="nome-news" type="text" class="form-control"/>
+                        <input id="nome-news" name="nome-news" type="text" class="form-control"/>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="email-news" class="col-md-3 control-label">Email:</label>
                     <div class="col-md-9">
-                        <input id="email-news" type="email" class="form-control"/>
+                        <input id="email-news" name="email-news" type="email" class="form-control"/>
                     </div>
                 </div>
                 <div class="form-group">
@@ -81,5 +76,11 @@
         </div>
     </div>
 </footer>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href='css/all.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/padrao.js"></script>
+@yield('javascript')
 </body>
 </html>

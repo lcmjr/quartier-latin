@@ -33,5 +33,6 @@ elixir(function(mix) {
     mix.scripts(['quartier-latin.js'],'public/js/quartier-latin.js');
     mix.scripts(['visible.js','padrao.js'],'public/js/padrao.js');
     mix.scripts(['banner.js'],'public/js/banner.js');
+    mix.scripts(['contato.js'],'public/js/contato.js');
     mix.scripts(['gallery-page.js'],'public/js/gallery-page.js');
 });
