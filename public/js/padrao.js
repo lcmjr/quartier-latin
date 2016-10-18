@@ -101,6 +101,7 @@ function ajax_courses(){
         url: "form-cursos",
         data: $('#informacoes-courses').serialize(),
         success: function (data) {
+            $('#informacoes-courses input,#informacoes-courses textarea').val("");
             box_ajax_response("msg-result-courses", "Mensagem enviada com sucesso, obrigado pelo contato!", "success");
         },
         error: function (erro) {

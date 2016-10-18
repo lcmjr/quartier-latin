@@ -21,7 +21,7 @@ class ControllerContact extends Controller {
         $data['mensagem'] = $request->input('message-contact');
         Mail::send('mail.contact',["data"=>$data],function($m) use($data){
             $m->from('no-reply@quartierlatin.com.br','Quartier Latin');
-            $m->to('luiz.manhani@gmail.com','Quartier Latin')->subject('O Cliente '.$data['nome'].' entrou em contato');
+            $m->to('escola@quartierlatin.com.br','Quartier Latin')->subject('O Cliente '.$data['nome'].' entrou em contato');
         });
     }
 }
