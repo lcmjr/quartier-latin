@@ -16,5 +16,6 @@ class Newsletter extends Migration {
     }
 
     public function down() {
+        Schema::drop('model_newsletters');
     }
 }

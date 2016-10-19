@@ -1,5 +1,6 @@
 var elixir = require('laravel-elixir'),
-    gulp = require('gulp');
+    gulp = require('gulp'),
+    inlinesource = require('gulp-inline-source');
 
 /*
  |--------------------------------------------------------------------------
@@ -35,4 +36,10 @@ elixir(function(mix) {
     mix.scripts(['banner.js'],'public/js/banner.js');
     mix.scripts(['contato.js'],'public/js/contato.js');
     mix.scripts(['gallery-page.js'],'public/js/gallery-page.js');
+});
+
+gulp.task("inline",function(){
+    return gulp.src('resources/views/includes/principal.blade.php')
+        .pipe(inlinesource())
+        .pipe(gulp.dest('build/'));
 });

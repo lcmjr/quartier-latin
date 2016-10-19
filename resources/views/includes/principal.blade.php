@@ -3,6 +3,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="DESCRIPTION" content="quartier latin, santo andré, escola de ballet, ballet clássico para crianças, ballet clásico para adultos, ballet clássico, ballet, escola de ballet em santo andré, marisa ballarini, quartier latin santo andré, quartier latin escola de dança, ballet clássico iniciante, ballet clássico em santo andré"/>
+    <meta name="DISTRIBUTION" content="global"/>
+    <meta name="publisher" content="Agência YOUP" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="author" content="www.youp.com.br" />
+    <meta name="revisit-after" content="1" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="Global" />
+    <meta name="language" content="portugues (portuguese)" />
+    <meta name="expires" content="never" />
+    <meta name="rating" content="Geral" />
+    <meta name="robots" content="index,follow,ALL" />
+    <meta name="doc-class" content="Completed" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Quartier Latin @yield('title')</title>
     <base href="{{ asset('/') }}"/>
@@ -82,5 +95,13 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/padrao.js"></script>
 @yield('javascript')
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-84801708-1', 'auto');
+    ga('send', 'pageview');
+</script>
 </body>
 </html>

@@ -53,7 +53,7 @@
     <section class="text-center section-maps">
         <h1 class="title-border color-orange">ONDE ESTAMOS?</h1>
         <h2>{{$dados_contato[0]->endereco_1}}<br/>{{$dados_contato[0]->endereco_2}} - {{$dados_contato[0]->endereco_3}}</h2>
-        {!!$dados_contato[0]->maps!!}
+        {!! str_replace('<x>','',$dados_contato[0]->maps)!!}
     </section>
     @section('content-rotate')
         @include('sections.form-courses',["central"=>false])

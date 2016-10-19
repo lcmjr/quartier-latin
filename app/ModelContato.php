@@ -11,6 +11,6 @@ class ModelContato extends Model{
     }
 
     public static function contact_page_data(){
-        return self::get(['telefone','facebook','instagram','youtube','maps','email','endereco_1','endereco_2','endereco_3']);
+        return self::get(['telefone','label_facebook','label_instagram','label_youtube','facebook','instagram','youtube','maps','email','endereco_1','endereco_2','endereco_3']);
     }
 }
