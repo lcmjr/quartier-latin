@@ -1,5 +1,6 @@
 body{
     font:normal 15px/1.2 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 b{
     font-weight: 400;

@@ -26,11 +26,14 @@
 .bg-rotate-fitup{
     margin-top: -41px;
 }
-.bg-rotate-after-none::after {
+.bg-rotate-after-none::after, .bg-rotate-before-none::before{
     display: none;
 }
 .bg-rotate-after-none .content-rotate {
     padding-bottom: 50px;
+}
+.bg-rotate-before-none .content-rotate {
+    padding-top: 50px;
 }
 .title-border{
     text-align: center;

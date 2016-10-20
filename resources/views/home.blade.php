@@ -40,8 +40,8 @@
                 <?php $animate_count++;?>
             @endforeach
         </div>
+        <a class="btn-standard btn-gold" href="formacao">SAIBA MAIS SOBRE A FORMAÇÃO DANÇA CLÁSSICA</a>
     </div>
-    <a class="btn-standard btn-gold" href="formacao">SAIBA MAIS SOBRE A FORMAÇÃO DANÇA CLÁSSICA</a>
 </section>
 @include('sections.blog')
 @include('sections.events')

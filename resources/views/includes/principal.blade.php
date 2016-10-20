@@ -39,7 +39,7 @@
             <a class="lnk-menu lnk-trajetoria" href="trajetoria">TRAJETÓRIA</a>
             <a class="lnk-menu lnk-galeria" href="galeria">GALERIA</a>
             <a class="lnk-menu lnk-plie" href="plie">PLIÉ</a>
-            <a class="lnk-menu lnk-backstage" href="backstage">BACKSTAGE</a>
+            <a class="lnk-menu lnk-backstage" href="../backstage">BACKSTAGE</a>
             <a class="lnk-menu lnk-contato" href="contato">CONTATO</a>
         </nav>
         @include('includes.redes-sociais', [ "dados_contato"=>$dados_contato[0],"show_link"=>false,"show_youtube"=>false])

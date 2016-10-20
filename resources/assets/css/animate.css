@@ -2,25 +2,25 @@
     opacity: 0;
 }
 .animate-y-pos {
-    transform: translateY(100px);
+    transform: translateY(30px);
 }
 .animate-y-pos-2 {
-    transform: translateY(150px);
+    transform: translateY(60px);
 }
 .animate-y-pos-3 {
-    transform: translateY(200px);
+    transform: translateY(90px);
 }
 .animate-y-pos-4 {
-    transform: translateY(250px);
+    transform: translateY(120px);
 }
 .animate-y-neg {
-    transform: translateY(-150px);
+    transform: translateY(-30px);
 }
 .animate-x-pos {
-    transform: translateX(150px);
+    transform: translateX(30px);
 }
 .animate-x-neg {
-    transform: translateX(-150px);
+    transform: translateX(-30px);
 }
 .animate-height {
     overflow: hidden;
