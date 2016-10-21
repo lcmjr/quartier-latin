@@ -16,5 +16,5 @@
         @endforeach
         <div class="clearfix"></div>
     </div>
-    <a href="contato" class="btn-standard btn-gold">ACESSE O BACKSTAGE</a>
+    <a href="../backstage" class="btn-standard btn-gold">ACESSE O BACKSTAGE</a>
 @overwrite
