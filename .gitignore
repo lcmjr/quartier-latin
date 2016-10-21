@@ -10,3 +10,4 @@ php.ini
 /build
 /public/css
 /public/admin
+/public/js
