@@ -17,7 +17,6 @@ elixir(function(mix) {
     mix.styles([
         'small-bgs.css',
         'menu.css',
-        'topo.css',
         'banner.css',
         'bootstrap_resets.css',
         'footer.css',

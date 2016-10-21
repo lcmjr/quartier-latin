@@ -8,7 +8,7 @@
         @foreach($posts as $post)
             <div class="post col-sm-6 col-md-3 margin-bottom animate-in animate-y-pos {{$class_animate_y[$animate_count]}}">
                 <div class="img-post">
-                    <a href="{{$post['link']}}"><img alt="{{$post['title']}}" src="uploads/post/{{$post['image']}}"/></a>
+                    <a href="{{$post['link']}}"><img alt="{{$post['title']}}" src="{{$post['image']}}"/></a>
                 </div>
                 <a href="{{$post['link']}}"><h2>{{$post['title']}}</h2></a>
             </div>
