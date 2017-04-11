@@ -10,4 +10,5 @@ php.ini
 /build
 /public/css
 /public/admin
+/public/backstage
 /public/js
