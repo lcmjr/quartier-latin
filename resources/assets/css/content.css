@@ -70,8 +70,12 @@
      margin-bottom: 20px;
 }
 .course h2 {
-    padding: 0 20px;
+    padding: 0 ;
+    font-size: 16px;
     margin: 15px 0 10px;
+}
+.course p{
+    text-align: center!important;
 }
 .subtitle-border {
     margin: -20px 0 30px;

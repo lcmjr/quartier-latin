@@ -10,7 +10,7 @@
                 <div class="img-course">
                     <img alt="{{$course->title}}" src="uploads/courses/{{$course->photo}}"/>
                 </div>
-                <h2 class="color-orange">{{$course->title}}</h2>
+                <h2 class="color-orange text-center">{{$course->title}}</h2>
                 {!!$course->text!!}
             </div>
             <?php $animate_count++;?>
