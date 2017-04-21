@@ -67,13 +67,13 @@
                 <div class="form-group">
                     <label for="nome-news" class="col-md-3 control-label">Nome:</label>
                     <div class="col-md-9">
-                        <input id="nome-news" name="nome-news" type="text" class="form-control"/>
+                        <input id="nome-news" name="nome-news" type="text" data-required-name="Nome" class="required-ipt-news form-control"/>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="email-news" class="col-md-3 control-label">Email:</label>
                     <div class="col-md-9">
-                        <input id="email-news" name="email-news" type="email" class="form-control"/>
+                        <input id="email-news" name="email-news" data-required-name="Email" type="email" class="required-ipt-news form-control"/>
                     </div>
                 </div>
                 <div class="form-group">

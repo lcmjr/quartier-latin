@@ -5,30 +5,14 @@ namespace App\Http\Controllers;
 use App\ModelNewsletter;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Newsletter;
 
 class ControllerNewsletter extends Controller {
     public function email(Request $request){
         $data['nome'] = $request->input('nome-news');
         $data['email'] = $request->input('email-news');
-        print_r($request->all());
-        $data['codigo'] = hash('sha256',($request->input('nome').$data['nome'].$data['email']));
-        $email = ModelNewsletter::where('nome',$data['nome'])->orWhere('email',$data['email'])->get();
-        if($email->count() == 0){
-            $id = ModelNewsletter::insertGetId(
-                ['email' => $data['email'],
-                    'nome'=> $data['nome'],
-                    'codigo' => $data['codigo'],
-                    'ativo'=> 'N']
-            );
-            $data['id'] = $id;
-            $this->enviar_email($data);
-            echo "1";
-        }else if($email[0]->ativo == 'N'){
-            $data['id'] = $email[0]->id;
-            $this->enviar_email($data);
-            echo "2";
-        }else
-            echo "3";
+        $merge_var =["FNAME"=>$data['nome']];
+        Newsletter::subscribe($data['email'],$merge_var,"newsletter");
     }
 
     public function ativar_email($codigo){

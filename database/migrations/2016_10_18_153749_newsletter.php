@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Newsletter extends Migration {
+class Newsletter_migration extends Migration {
     public function up() {
         Schema::create('model_newsletters', function (Blueprint $table) {
             $table->increments('id');

@@ -157,9 +157,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
-        'Jenssegers\Date\DateServiceProvider',
-
+        Spatie\Newsletter\NewsletterServiceProvider::class,
     ],
 
     /*
@@ -206,7 +204,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Newsletter' => Spatie\Newsletter\NewsletterFacade::class,
     ],
 
 ];

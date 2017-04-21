@@ -11,13 +11,13 @@
                 <div class="form-group">
                     <label for="nome-courses" class="col-md-4 col-sm-4 control-label">Nome:</label>
                     <div class="col-md-8 col-sm-8">
-                        <input id="nome-courses" name="nome-courses" type="text" class="form-control"/>
+                        <input id="nome-courses" name="nome-courses" data-required-name="Nome" type="text" class="required-ipt-courses form-control"/>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="email-courses" class="col-md-4 col-sm-4 control-label">Email:</label>
                     <div class="col-md-8 col-sm-8">
-                        <input id="email-courses" name="email-courses" type="email" class="form-control"/>
+                        <input id="email-courses" name="email-courses" type="email" data-required-name="Email" class="required-ipt-courses form-control"/>
                     </div>
                 </div>
                 <div class="form-group">
@@ -51,7 +51,7 @@
                 <div class="form-group">
                     <label for="msg-courses" class="col-md-4 col-sm-4 control-label">Mensagem:</label>
                     <div class="col-md-8 col-sm-8">
-                        <textarea id="msg-courses" class="form-control" name="msg-courses"></textarea>
+                        <textarea id="msg-courses" data-required-name="Mensagem" class="required-ipt-courses form-control" name="msg-courses"></textarea>
                     </div>
                 </div>
                 <div class="form-group">

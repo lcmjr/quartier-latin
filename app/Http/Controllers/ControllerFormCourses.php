@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-use App\Http\Requests;
 use Illuminate\Support\Facades\Mail;
+use Newsletter;
 
 class ControllerFormCourses extends Controller {
     public function email(Request $request){
@@ -17,7 +16,9 @@ class ControllerFormCourses extends Controller {
         $data['msg-courses'] = $request->input('msg-courses');
         Mail::send('mail.courses',["data"=>$data],function($m) use($data){
             $m->from('no-reply@quartierlatin.com.br','Quartier Latin');
-            $m->to('escola@quartierlatin.com.br','Quartier Latin')->subject('O Cliente '.$data['nome-courses'].' deseja ter mais informações sobre cursos');
+            $m->to('contato@quartierlatin.com.br','Quartier Latin')->subject('O Cliente '.$data['nome-courses'].' deseja ter mais informações sobre cursos');
         });
+        $merge_var =["FNAME"=>$data['nome-courses']];
+        Newsletter::subscribe($data['email'],$merge_var,"cursos");
     }
 }

@@ -1,1 +1,4 @@
-$(window).ready(function(){$(".galeria").gallery()});
+$(window).ready(function(){
+    $(".galeria").gallery();
+});
+//# sourceMappingURL=quartier-latin.js.map

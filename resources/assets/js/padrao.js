@@ -28,35 +28,24 @@ $(window).ready(function(){
 function remove_class(classe) {
     $("." + classe).removeClass(classe);
 }
-var newsletter_field = ["nome-news","email-news"];
-var newsletter_field_names = ["Nome","Email"];
 function enviar_news(){
-    if(check_input_filled(newsletter_field,newsletter_field_names,"msg-result-news")) {
-        box_ajax_response("msg-result-news", "Enviando a mensagem...", "info");
-        $.ajax({
-            type: 'POST',
-            url: "newsletter",
-            data: $('#form-newsletter').serialize(),
-            success: function (data) {
-                $('#form-newsletter input').val("");
-                box_ajax_response("msg-result-news", "Mensagem enviada com sucesso, obrigado pelo contato!", "success");
-            },
-            error: function (erro) {
-                console.log(erro);
-                box_ajax_response("msg-result-news", "Ocorreu um erro no envio!", "danger");
-            }
-        });
-    }
-    return false;
-}
-function check_input_filled(inputs,inputs_names,id_warning_box){
-    for(i = 0;i<inputs.length;i++){
-        if($("#"+inputs[i]).val()== ""){
-            box_ajax_response(id_warning_box,"Preencha o campo "+inputs_names[i],"danger");
-            return false
+    if(!validaForm(".required-ipt-news","msg-result-news"))
+        return false;
+    box_ajax_response("msg-result-news", "Enviando a mensagem...", "info");
+    $.ajax({
+        type: 'POST',
+        url: "newsletter",
+        data: $('#form-newsletter').serialize(),
+        success: function (data) {
+            $('#form-newsletter input').val("");
+            box_ajax_response("msg-result-news", "Mensagem enviada com sucesso, obrigado pelo contato!", "success");
+        },
+        error: function (erro) {
+            console.log(erro);
+            box_ajax_response("msg-result-news", "Ocorreu um erro no envio!", "danger");
         }
-    }
-    return true;
+    });
+    return false;
 }
 function box_ajax_response(id,msg,class_bootstrap){
     $("#"+id).hide({duration:200,
@@ -67,6 +56,8 @@ function box_ajax_response(id,msg,class_bootstrap){
         }});
 }
 function ajax_courses(){
+    if(!validaForm(".required-ipt-courses","msg-result-courses"))
+        return false;
     box_ajax_response("msg-result-courses", "Enviando a mensagem...","info");
     $.ajax({
         type: 'POST',
@@ -82,4 +73,16 @@ function ajax_courses(){
         }
     });
     return false;
+}
+function validaForm(classe,box_chamada){
+    erro_campo_preenchido = false;
+    $(classe).each(function(){
+        if ($(this).val() == '') {
+            erro_campo_preenchido = true;
+            var nome_campo = $(this).attr("data-required-name");
+            box_ajax_response(box_chamada, "Preencha o campo "+nome_campo+" !", "danger");
+            return false;
+        }
+    });
+    return !erro_campo_preenchido;
 }

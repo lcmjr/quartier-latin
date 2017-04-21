@@ -19,13 +19,13 @@
                 <div class="form-group">
                     <label for="nome-contact" class="col-md-3 col-sm-3 control-label">Nome:</label>
                     <div class="col-md-9 col-sm-9">
-                        <input id="nome-contact" name="nome-contact" type="text" class="form-control"/>
+                        <input id="nome-contact" name="nome-contact" data-required-name="Nome" type="text" class="required-ipt-contato form-control"/>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="email-contact" class="col-md-3 col-sm-3 control-label">Email:</label>
                     <div class="col-md-9 col-sm-9">
-                        <input id="email-contact" name="email-contact" type="email" class="form-control"/>
+                        <input id="email-contact" name="email-contact" data-required-name="Email" type="email" class="required-ipt-contato form-control"/>
                     </div>
                 </div>
                 <div class="form-group">
@@ -37,7 +37,7 @@
                 <div class="form-group">
                     <label for="message-contact" class="col-md-3 col-sm-3 control-label">Mensagem:</label>
                     <div class="col-md-9 col-sm-9">
-                        <textarea class="form-control" rows="5" id="message-contact" name="message-contact"></textarea>
+                        <textarea class="required-ipt-contato form-control" data-required-name="Mensagem" rows="5" id="message-contact" name="message-contact"></textarea>
                     </div>
                 </div>
                 <div class="form-group">

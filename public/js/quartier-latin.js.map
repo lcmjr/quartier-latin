@@ -1,1 +1,1 @@
-{"version":3,"sources":["quartier-latin.js"],"names":[],"mappings":"AAAA;AACA;AACA","file":"quartier-latin.js","sourcesContent":["$(window).ready(function(){\r\n    $(\".galeria\").gallery();\r\n});"],"sourceRoot":"/source/"}
+{"version":3,"sources":["quartier-latin.js"],"names":[],"mappings":"AAAA;AACA;AACA","file":"quartier-latin.js","sourcesContent":["$(window).ready(function(){\r\n    $(\".galeria\").gallery();\r\n});"]}
