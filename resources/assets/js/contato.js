@@ -1,8 +1,10 @@
 function ajax_contact(){
+    if(!validaForm())
+        return false;
     box_ajax_response("msg-result-contato", "Enviando a mensagem...","info");
     $.ajax({
         type: 'POST',
-        url: "contato",
+        url: $('#form-contact').attr("action"),
         data: $('#form-contact').serialize(),
         success: function (data) {
             $('#form-contact input,#form-contact textarea').val("");
@@ -14,4 +16,16 @@ function ajax_contact(){
         }
     });
     return false;
+}
+function validaForm(){
+    erro_campo_preenchido = false;
+    $(".required-ipt").each(function(){
+        if ($(this).val() == '') {
+            erro_campo_preenchido = true;
+            var nome_campo = $(this).attr("data-required-name");
+            box_ajax_response("msg-result-contato", "Preencha o campo "+nome_campo+" !", "danger");
+            return false;
+        }
+    });
+    return !erro_campo_preenchido;
 }
