@@ -1,59 +1,72 @@
 #btn-menu-rpsv {
     display: none;
 }
+
 #topo-principal {
     text-align: center;
     padding: 25px 0 15px;
 }
+
 #logo {
     width: 159px;
     height: 158px;
     margin: 0 auto 25px;
     display: block;
 }
+
 #menu-principal {
     padding: 4px 0;
     display: inline-block;
 }
+
 .lnk-menu {
     transition: 0.15s;
     padding: 0 15px;
     color: white;
     border-left: 1px solid white;
 }
-.lnk-quartier{
+
+.lnk-quartier {
     border: none;
 }
+
 .lnk-menu:hover, .page-quartier .lnk-quartier, .page-formacao .lnk-formacao, .page-calendario .lnk-calendario, .page-trajetoria .lnk-trajetoria, .page-galeria .lnk-galeria, .page-plie .lnk-plie, .page-backstage .lnk-backstage, .page-contato .lnk-contato {
     color: #A9ECE8;
 }
+
 #topo-principal .icon-social {
     margin-bottom: -8px;
 }
-@media all and (min-width:995px){
+
+@media all and (min-width: 995px) {
     #menu-principal {
-        display: inline-block!important;
+        display: inline-block !important;
     }
 }
+
 @media all and (max-width: 995px) {
     #menu-principal {
         width: 510px;
         display: block;
         margin: 0 auto 10px;
     }
+
     .lnk-menu {
         margin-top: 10px;
         display: inline-block;
     }
-    .lnk-galeria {
+
+    .lnk-backstage {
         border: none;
     }
 }
-@media all and (min-width: 591px) and (max-width:995px){
+
+@media all and (min-width: 591px) and (max-width: 995px) {
     #menu-principal {
-        display: block!important;
+        display: block !important;
     }
 }
+
 @media all and (max-width: 590px) {
     .lnk-menu {
         border-left: 0;
@@ -62,25 +75,31 @@
         padding: 10px 0 10px;
         margin-top: 0;
     }
+
     .lnk-quartier {
         border-top: 1px solid #E15616;
     }
+
     #logo {
         margin-bottom: 10px;
     }
+
     #topo-principal .central {
         width: 100%;
     }
+
     #menu-principal {
         width: 100%;
         display: none;
     }
-    .lnk-menu:hover, .page-quartier .lnk-quartier, .page-formacao .lnk-formacao, .page-calendario .lnk-calendario, .page-trajetoria .lnk-trajetoria, .page-galeria .lnk-galeria, .page-plie .lnk-plie, .page-backstage .lnk-backstage, .page-contato .lnk-contato{
+
+    .lnk-menu:hover, .page-quartier .lnk-quartier, .page-formacao .lnk-formacao, .page-calendario .lnk-calendario, .page-trajetoria .lnk-trajetoria, .page-galeria .lnk-galeria, .page-plie .lnk-plie, .page-backstage .lnk-backstage, .page-contato .lnk-contato {
         background: #E15616;
         color: white;
         text-decoration: none;
         border-color: black;
     }
+
     #btn-menu-rpsv {
         display: block;
         margin: 0 auto 10px;

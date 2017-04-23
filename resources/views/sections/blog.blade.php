@@ -2,7 +2,7 @@
 @extends('sections.bg-rotate',["classes_rotate" => "bg-rotate-orange text-center ".$class])
 @section('content-rotate')
     <h1 class="title-border">AS ÚLTIMAS DO BACKSTAGE</h1>
-    <h2 class="subtitle-border">Dicas, novidades e blá blá blá.</h2>
+    <h2 class="subtitle-border">Filosofias e blá blá blá.</h2>
     <div class="row">
         <?php $animate_count = 0;?>
         @foreach($posts as $post)
